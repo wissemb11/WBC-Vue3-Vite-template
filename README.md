@@ -99,10 +99,10 @@ syntax:
 
 #### WBHtml: Taking accunt of attributes (class or style)
 
-| HTML Layout                                                                      | options API                                                                                                 | Composition API                                                                                                           |
-| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `<span class="cl0 cl1">bonjour tout le monde</span>`                             | `<WBHtml v-bind='{ html: "[[bonjour tout le monde ` \| ` cl0 cl1]]" }'></WBHtml>`                           | ` return () => h(WBHtml, { html: "[[bonjour tout le monde`\|`cl0 cl1]]" });`                                              |
-| `<span style="color: red; background-color: grey;">bonjour tout le monde</span>` | `<WBHtml html= '[[bonjour tout le monde `\|`{"style":{"color":"red","backgroundColor":"grey"}}]]></WBHtml>` | `return () => h(WBHtml, { html: '[[bonjour tout le monde `\|` {"style":{"color":"red","backgroundColor":"grey"}} ]]' });` |
+| HTML Layout                                                                      | options API                                                                                                  | Composition API                                                                                                           |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `<span class="cl0 cl1">bonjour tout le monde</span>`                             | `<WBHtml v-bind='{ html: "[[bonjour tout le monde ` \| ` cl0 cl1]]" }'></WBHtml>`                            | ` return () => h(WBHtml, { html: "[[bonjour tout le monde`\|`cl0 cl1]]" });`                                              |
+| `<span style="color: red; background-color: grey;">bonjour tout le monde</span>` | `<WBHtml html= '[[bonjour tout le monde `\|`{"style":{"color":"red","backgroundColor":"grey"}}]]'></WBHtml>` | `return () => h(WBHtml, { html: '[[bonjour tout le monde `\|` {"style":{"color":"red","backgroundColor":"grey"}} ]]' });` |
 
 #### WBHtml: stylish html hyper-link to new page :target="\_blank"
 
