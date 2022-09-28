@@ -186,9 +186,9 @@ For details guide, visit www.wi-bg.com/WBC
 
 ### S-WBC: list of items using a tag
 
-| HTML Layout | options API | Composition API |
-| ----------- || --------------- |
-|`<li>222</li> <li><input type="checkbox" disabled=""></li> <li>111</li> <li><input type="checkbox" disabled=""></li> <li>123</li>` | `<WBC :item="[222,true,111,false,123]" wrap="li"></WBC>`|`return () => h(WBC, { item: [222,true,111,false,123],wrap:'li' })`|
+| HTML Layout                                                                                                                        | options API                                              | Composition API                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------- |
+| `<li>222</li> <li><input type="checkbox" disabled=""></li> <li>111</li> <li><input type="checkbox" disabled=""></li> <li>123</li>` | `<WBC :item="[222,true,111,false,123]" wrap="li"></WBC>` | `return () => h(WBC, { item: [222,true,111,false,123],wrap:'li' })` |
 
 **N.B: Some rules**
 
