@@ -184,7 +184,7 @@ The can be classified from particular to general, in terms of the item and the p
 
 For details guide, visit www.wi-bg.com/WBC
 
-### S-WBC: list of items using `"<li>"`
+### S-WBC: list of items using `'<li>'`
 
 | HTML Layout | options API | Composition API |
 | ----------- || --------------- |
