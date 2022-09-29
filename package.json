@@ -23,6 +23,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wissemb11/Vue3-Vite-template"
-  }
+    "url": "https://github.com/wissemb11/WBC-Vue3-Vite-template"
+  },
+  "author": "Wissem Boughamoura",
+  "license": "MIT"
 }

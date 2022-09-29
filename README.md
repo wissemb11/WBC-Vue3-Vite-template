@@ -1,6 +1,8 @@
 # WBC-Vue3-Vite-template
 
-This tutoriel should help get you started developing with WBC-ui3 and Vue 3 in Vite context.
+Tutorial: www.wi-bg.com/wb/tutoriels/vue3/vite/wbc-vue3-vite-template
+
+This tutorial should help get you started developing with WBC-ui3 and Vue 3 in Vite context.
 
 ## 1- Create the ecosystem of WBC (vue3 in vite)
 
@@ -8,7 +10,7 @@ This tutoriel should help get you started developing with WBC-ui3 and Vue 3 in V
 npm create vite@latest
 ```
 
-follow suggession and choose ssettings according of your needs (vue3 is required). For example:
+follow suggession and choose settings according of your needs (vue3 is required). For example:
 
 ✔ Project name: <project-name>  
 ✔ Select a framework: › Vue  
@@ -63,9 +65,9 @@ WBCApp.mount("#app");
 
 ## The contribution
 
-1- The componnents WBLink, WBHtml, WBC are registered globally to the main app. Now, you can explore the power of WBC.
+1- The components WBLink, WBHtml, WBC are registered globally to the main app. Now, you can explore the power of WBC.
 
-2- All globals registered componnents are authomatically injected to WBC.
+2- All global registered components are automatically injected to WBC.
 
 ## Run project
 
@@ -82,10 +84,10 @@ Done. Now run:
 
 For details guide, visit www.wi-bg.com/WBC
 
-### WBHtml: Componnent and Examples
+### WBHtml: Component and Examples
 
 ```sh
-Componnent name:'WBHtml'
+Component name:'WBHtml'
 props:['html']
 syntax:
 "<WBHtml htm="[[<htm_content>|<classes or style>|<external_or_internal_link>]]"></WBHtml>
@@ -97,7 +99,7 @@ syntax:
 | ------------------------------------------------------ | ------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
 | `<span>bonjour <b>tout</b><br> le <i>monde</i></span>` | `<WBHtml html="bonjour <b>tout</b><br> le <i>monde</i>"></WBHtml>` | `return () => h(WBHtml, { html: "bonjour <b>tout</b><br> le <i>monde</i>" })` |
 
-#### WBHtml: Taking accunt of attributes (class or style)
+#### WBHtml: Taking account of attributes (class or style)
 
 | HTML Layout                                                                      | options API                                                                                                  | Composition API                                                                                                           |
 | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
@@ -118,10 +120,10 @@ N.B. WBHtml text c an be linked to interanl route (for example vue-router4)
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `<span>hi mr ! bonjour <a class="cl0 cl1" href="ssss" _pageexpand_="40">tout</a> all <span class="cl0 cl1">tout</span> le monde comment <a class="" href="https://stackoverflow.com">vas tu</a>? link to OBJECT </span>` | `<WBHtml html="[[ hi mr ! bonjour [[tout `\|`cl0 cl1`\|`subUrl]] all [[tout` \| `cl0 cl1]] le monde comment [[vas tu`\|` `\|` https://stackoverflow.com]]? link to [[OBJECT]]]]"></WBHtml>` | `return () =>h(WBHtml, {html: "[[hi mr ! bonjour [[tout`\|`cl0 cl1`\|`subUrl]] alll [[tout`\|`cl0 cl1]] le [[monde]] comment [[vas tu`\|\|`https://stackoverflow.com]]? link to [[OBJECT]]]]"});` |
 
-### WBLink: Componnent and Examples
+### WBLink: Component and Examples
 
 ```sh
-Componnent name:'WBLink'
+Component name:'WBLink'
 props:['to', 'text']
 attributes:any attributes of the Anchor tag
 syntax:
@@ -136,42 +138,42 @@ syntax:
 
 N.B.
 
-- To open in another ongglet use prperty **target="\_blank"**
+- To open in another onglet use property **target="\_blank"**
 - To use router-link, the props to have to be an object.
 
-### WBC: Componnent and Examples
+### WBC: Component and Examples
 
 ```sh
-Componnent name:'WBC'
+Component name:'WBC'
 props:['to', 'item','key']
 attributes:any attributes of html tag/component/page...
 syntax:
 "<WBLink to="http://stackoverflow.com" text="This is a Link"></WBLink>
 ```
 
-- WBC is a Vue componnent which consists of writing, generalizing, controlling, generating and mixing html, css, js (support events too), dom, vuetify by writing only js or json objects. In addition, theses objects provide interaction with the backend as well.
+- WBC is a Vue component which consists of writing, generalizing, controlling, generating and mixing html, css, js (support events too), dom, vuetify by writing only js or json objects. In addition, theses objects provide interaction with the backend as well.
 
-- WBC is a VueJs Componnent with three props (item wrap and key). It aims to be used for more complex componnents with the minimum html/css codes. It is fully controllable by js or JSON object.
+- WBC is a VueJs Component with three props (item wrap and key). It aims to be used for more complex components with the minimum html/css codes. It is fully controllable by js or JSON object.
 
 - WBC is reactive with the dom, dynamic, support events and can interact with backend.
 
 - each WBC component has its own headers and footers slots...
 
-- WBC support external source componnents (like Vuetify or bootstrap-vue..).
+- WBC support external source components (like Vuetify or bootstrap-vue..).
   It have to be injected while the installation of the WBC plugin of vue app.
 
 ```sh
 import WBC_plugin from "wbc-ui3";
-import * as  object_of_componnents from <external_source>
+import * as  object_of_components from <external_source>
 
 #creation of Vue APP named WBCApp
 const WBCApp = createApp(App);
 
 #install plugin to WBCApp before mounted it
-WBCApp.use(WBC_plugin, object_of_componnents);
+WBCApp.use(WBC_plugin, object_of_components);
 ```
 
-- Global registered componnents are authomatically registered to WBC.
+- Global registered components are automatically registered to WBC.
 
 The can be classified from particular to general, in terms of the item and the props in:
 
@@ -179,8 +181,8 @@ The can be classified from particular to general, in terms of the item and the p
 - L-WBC: List of WBC
 - GL-WBC: General List of WBC
 - GWBC: General WBC
-- GWBSC : General Simple Compnent
-- GWBNC : General Nested Compnent
+- GWBSC : General Simple Component
+- GWBNC : General Nested Component
 
 For details guide, visit www.wi-bg.com/WBC
 
@@ -201,13 +203,13 @@ For details guide, visit www.wi-bg.com/WBC
 
 In that case, WBC become a caviar, theses operations can be dynamically used throw the object js:
 
-- hide/show the componnent
-- stylish the componnent
+- hide/show the component
+- stylish the component
 - add headers and footers for this component
 - Link the component to urls
 - add events to components
-- ranging and changing the layout of the componnents easly like a puszzle game
-- interact with the backend
+- ranging and changing the layout of the components easily like a puzzle game
+- interact with the back-end
   <!--
   | HTML Layout | options API | Composition API |
   | ----------- | ----------- | --------------- |
